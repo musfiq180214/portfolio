@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Musfiq Rahman — Flutter Developer Portfolio</title>
+<meta name="description" content="Musfiq Rahman — Junior Software Engineer (Flutter) building scalable, clean-architecture mobile apps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+<div id="progress"></div>
+<canvas id="bg"></canvas>
+<div id="glow"></div>
+
+<header class="topbar">
+  <div class="logo">musfiq<span>.dev</span></div>
+  <div class="ep-label" id="epLabel">Episode 01 — Prologue</div>
+</header>
+<nav class="dots" id="dots" aria-label="Episodes"></nav>
+
+<main>
+  <!-- EP 1 -->
+  <section id="hero" class="left" data-title="Prologue">
+    <div class="panel">
+      <p class="eyebrow reveal">Hello, I'm</p>
+      <h1 class="reveal d1">Musfiq<br>Rahman</h1>
+      <div class="typed reveal d2" id="typed"></div>
+      <p class="lead reveal d3">Junior Software Engineer (Flutter) at <strong>Nevrosys Limited</strong> — building modern, scalable mobile apps and solving real-world problems with clean, maintainable software.</p>
+      <div class="btns reveal d4">
+        <a class="btn primary" href="#projects">Explore my work</a>
+        <a class="btn" href="mailto:musfiq677@gmail.com">Say hello</a>
+      </div>
+    </div>
+    <div class="scroll-hint"><i></i>Scroll to begin the story</div>
+  </section>
+
+  <!-- EP 2 -->
+  <section id="about" class="right" data-title="About">
+    <div class="panel glass reveal">
+      <p class="eyebrow">Episode 02 · About</p>
+      <h2>Clean code, calm architecture.</h2>
+      <p>I build <strong>SOLID-principled, production-grade Android apps</strong> with a focus on <strong>Riverpod, Firebase, and REST/Dio</strong>, paired with an AI-augmented workflow that shortens delivery time while keeping code maintainable.</p>
+      <p style="margin-top:12px">I'm also comfortable full-stack — I've shipped a JWT-secured, Dockerized <strong>Spring Boot + PostgreSQL</strong> backend with a Flutter frontend, across government, e-commerce, and ed-tech platforms.</p>
+      <div class="stats">
+        <div class="stat"><b data-count="3">0</b><span>Play Store apps</span></div>
+        <div class="stat"><b data-count="16">0</b><span>Projects built</span></div>
+        <div class="stat"><b data-count="1">0</b><span>Paper submitted</span></div>
+      </div>
+      <ul class="bullets">
+        <li>Cross-platform mobile with Flutter &amp; native Jetpack Compose</li>
+        <li>Exploring Artificial Intelligence &amp; Machine Learning</li>
+        <li>Competitive programmer on Codeforces &amp; LeetCode</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EP 3 -->
+  <section id="experience" class="left" data-title="Experience">
+    <div class="panel glass reveal">
+      <p class="eyebrow">Episode 03 · Experience</p>
+      <h2>Where I've been building</h2>
+      <div class="timeline">
+        <div class="job">
+          <div class="when">JULY 2026 — PRESENT</div>
+          <h3>Junior Software Engineer (Flutter)</h3>
+          <div class="company">Nevrosys Limited</div>
+          <ul>
+            <li>Architect scalable Flutter apps with Clean Architecture, SOLID, and feature-based modular design.</li>
+            <li>Ship features with Riverpod/Bloc, Dio, REST, SSLCommerz payments, DI, flavors, and structured error handling.</li>
+            <li>Use AI tools with structured context engineering on the <strong>EDUBEE Learning Platform</strong>, validating all generated code before merge.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="when">AUGUST 2025 — MAY 2026</div>
+          <h3>Flutter Application Developer</h3>
+          <div class="company">Innofast Technologies Limited</div>
+          <ul>
+            <li>Built feature-based Clean Architecture apps with Repository Pattern and Riverpod.</li>
+            <li>Created a centralized Dio layer with auth interceptors plus offline-first storage via Isar &amp; Hive.</li>
+            <li>Built reusable UI libraries and defined API contracts with backend developers through Git workflows and code reviews.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EP 4 -->
+  <section id="stack" class="right" data-title="Tech Stack">
+    <div class="panel glass reveal">
+      <p class="eyebrow">Episode 04 · Toolbox</p>
+      <h2>Tech stack</h2>
+      <div class="stack-group"><h3>Languages</h3><div class="chips">
+        <span class="chip">Dart</span><span class="chip">Python</span><span class="chip">Kotlin</span><span class="chip">Java</span><span class="chip">C / C++</span><span class="chip">HTML / CSS</span></div></div>
+      <div class="stack-group"><h3>Mobile &amp; State</h3><div class="chips">
+        <span class="chip">Flutter</span><span class="chip">Jetpack Compose</span><span class="chip">Riverpod</span><span class="chip">Bloc</span></div></div>
+      <div class="stack-group"><h3>Backend &amp; Data</h3><div class="chips">
+        <span class="chip">Spring Boot</span><span class="chip">Firebase</span><span class="chip">Supabase</span><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">Isar</span><span class="chip">Hive</span></div></div>
+      <div class="stack-group"><h3>APIs &amp; Integrations</h3><div class="chips">
+        <span class="chip">REST + Dio</span><span class="chip">JWT</span><span class="chip">SSLCommerz</span><span class="chip">AdMob</span><span class="chip">LLM APIs</span></div></div>
+      <div class="stack-group"><h3>Architecture &amp; Tooling</h3><div class="chips">
+        <span class="chip">Clean Architecture</span><span class="chip">SOLID</span><span class="chip">MVVM</span><span class="chip">Docker</span><span class="chip">Git / GitHub</span><span class="chip">Prompt Engineering</span></div></div>
+    </div>
+  </section>
+
+  <!-- EP 5 -->
+  <section id="apps" class="left" data-title="Live Apps">
+    <div class="panel glass reveal apps">
+      <p class="eyebrow">Episode 05 · Shipped</p>
+      <h2>Live on the Play Store</h2>
+      <div class="card-grid">
+        <div class="card" data-tilt>
+          <span class="tag">Government</span><h3>Labbaik App</h3>
+          <p>Multi-step refund workflow with OTP verification, handling failed and retried verification edge cases.</p>
+          <span class="stackline">Flutter · REST API</span>
+        </div>
+        <div class="card" data-tilt>
+          <span class="tag">E-commerce</span><h3>Amar Shodai</h3>
+          <p>Cart, checkout, order tracking and support — with a companion delivery-tracking app for couriers.</p>
+          <span class="stackline">Flutter · REST API · Firebase</span>
+        </div>
+        <div class="card" data-tilt>
+          <span class="tag">E-learning</span><h3>Edubee</h3>
+          <p>Online learning and exam-prep platform; resolved Hive storage and permission issues across features.</p>
+          <span class="stackline">Flutter · REST API · Firebase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EP 6 -->
+  <section id="projects" class="center" data-title="Projects">
+    <div class="panel wide">
+      <div class="reveal">
+        <p class="eyebrow">Episode 06 · Showcase</p>
+        <h2>Featured projects</h2>
+      </div>
+
+      <div class="theater reveal" id="theater">
+        <div class="frame">
+          <div class="frame-bar">
+            <i></i><i></i><i></i>
+            <span class="frame-title" id="frameTitle">Project video</span>
+            <a class="frame-open" id="openLink" href="#" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
+          </div>
+          <div class="stage" id="stage"></div>
+        </div>
+        <div class="playlist" id="playlist" role="list" aria-label="Project videos"></div>
+      </div>
+
+      <div class="subhead reveal">Full-stack &amp; AI-powered</div>
+      <div class="card-grid three" style="text-align:left">
+        <a class="card reveal" data-tilt href="https://lnkd.in/p/ga6B-q6q" target="_blank" rel="noopener">
+          <span class="tag">Full-stack</span><h3>Student CRUD</h3>
+          <p>Student management &amp; analytics system — JWT-secured, Dockerized, deployed live with PDF reports and bilingual support.</p>
+          <span class="stackline">Flutter · Riverpod · Spring Boot · PostgreSQL</span><span class="go">View demo →</span></a>
+        <a class="card reveal d1" data-tilt href="https://www.linkedin.com/posts/mrs180214_flutter-generativeai-traveltech-activity-7485236949184577536-tWa3" target="_blank" rel="noopener">
+          <span class="tag">AI · Travel</span><h3>VoyageAI</h3>
+          <p>AI-powered travel app with intelligent trip planning, interactive maps, and Firebase Auth.</p>
+          <span class="stackline">Flutter · Riverpod · Firebase · Clean Arch</span><span class="go">View demo →</span></a>
+        <a class="card reveal d2" data-tilt href="https://lnkd.in/p/gbS-3mYu" target="_blank" rel="noopener">
+          <span class="tag">AI · Health</span><h3>LifePulse</h3>
+          <p>Health &amp; nutrition app with multimodal meal analysis, personalized coaching, and offline caching.</p>
+          <span class="stackline">Flutter · Supabase · Hive · Riverpod</span><span class="go">View demo →</span></a>
+        <a class="card reveal" data-tilt href="https://lnkd.in/p/eyjCPwZ8" target="_blank" rel="noopener">
+          <span class="tag">AI · Transport</span><h3>BDRail</h3>
+          <p>Railway ticket booking with Gemini conversational booking, seat management, SSLCommerz payments, and PDF e-tickets.</p>
+          <span class="stackline">Flutter · Gemini · Hive · Material 3</span><span class="go">View demo →</span></a>
+        <a class="card reveal d1" data-tilt href="https://lnkd.in/p/gBVKqCrk" target="_blank" rel="noopener">
+          <span class="tag">Learning</span><h3>QuickLearn</h3>
+          <p>Learning platform with SSLCommerz (Cards, bKash, Nagad, Rocket, Net Banking), AdMob, and offline order caching.</p>
+          <span class="stackline">Flutter · Riverpod · Hive · AdMob</span><span class="go">View demo →</span></a>
+        <a class="card reveal d2" data-tilt href="https://lnkd.in/p/g53Nd6Xg" target="_blank" rel="noopener">
+          <span class="tag">Android</span><h3>Dummy JSON App</h3>
+          <p>Enterprise-grade Jetpack Compose app: offline-first, type-safe navigation, Material 3.</p>
+          <span class="stackline">Compose · Room · DataStore · StateFlow</span><span class="go">View demo →</span></a>
+      </div>
+
+      <div class="subhead reveal">Flutter applications</div>
+      <div class="card-grid three" style="text-align:left">
+        <a class="card reveal" data-tilt href="https://github.com/musfiq1814/projecthome" target="_blank" rel="noopener"><span class="tag">Flutter · Firebase</span><h3>Home Rent Management</h3><p>Rental platform with auth, property listings, and booking.</p></a>
+        <a class="card reveal d1" data-tilt href="https://github.com/musfiq1814/Instagram_flutter" target="_blank" rel="noopener"><span class="tag">Flutter · Firebase</span><h3>Instagram Clone</h3><p>Image sharing, likes, comments, Firebase backend.</p></a>
+        <a class="card reveal d2" data-tilt href="https://github.com/musfiq180214/amazon_clone_repo" target="_blank" rel="noopener"><span class="tag">Flutter · REST</span><h3>Amazon Clone</h3><p>Product browsing, cart management, API integration.</p></a>
+        <a class="card reveal" data-tilt href="https://github.com/musfiq180214/telegram_clone_repo" target="_blank" rel="noopener"><span class="tag">Flutter · Firebase</span><h3>Telegram Clone</h3><p>Real-time one-to-one and group messaging.</p></a>
+        <a class="card reveal d1" data-tilt href="https://github.com/musfiq180214/dummyjson" target="_blank" rel="noopener"><span class="tag">Clean Arch</span><h3>Product Application</h3><p>Dio networking, DI, localization, cart and order management.</p></a>
+        <a class="card reveal d2" data-tilt href="https://github.com/musfiq180214/tasks" target="_blank" rel="noopener"><span class="tag">Flutter · Firebase</span><h3>Tasks Application</h3><p>Task manager with CRUD for daily activities.</p></a>
+        <a class="card reveal" data-tilt href="https://github.com/musfiq180214/smart_expense_tracker" target="_blank" rel="noopener"><span class="tag">Flutter · Firebase</span><h3>Smart Expense Tracker</h3><p>Monthly expense visualization and analytics dashboard.</p></a>
+        <a class="card reveal d1" data-tilt href="https://github.com/musfiq180214/push_notification" target="_blank" rel="noopener"><span class="tag">FCM</span><h3>Push Notification Demo</h3><p>Firebase push, background messaging, notification handling.</p></a>
+        <a class="card reveal d2" data-tilt href="https://github.com/musfiq180214/nearcart" target="_blank" rel="noopener"><span class="tag">Flutter</span><h3>Near Cart</h3><p>Location-based assistant for nearby stores and shopping lists.</p></a>
+        <a class="card reveal" data-tilt href="https://github.com/musfiq180214/studio_ghibli" target="_blank" rel="noopener"><span class="tag">Flutter</span><h3>Studio Ghibli Explorer</h3><p>Explore films, characters, and species with a production-ready architecture.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EP 7 -->
+  <section id="education" class="right" data-title="Education">
+    <div class="panel glass reveal">
+      <p class="eyebrow">Episode 07 · Learning</p>
+      <h2>Education &amp; research</h2>
+      <div class="edu-block">
+        <div class="when" style="color:var(--a);font-size:.8rem">2018 — 2025</div>
+        <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+        <div class="company" style="color:var(--b)">Khulna University</div>
+        <p style="font-size:.9rem">Data Structures &amp; Algorithms · OOP · Software Engineering · AI · Machine Learning · Networks · Security · Data Mining</p>
+      </div>
+      <div class="edu-block">
+        <h3>Precision Protein Folding Leveraging Ant Lion Optimization</h3>
+        <div class="company" style="color:var(--b)"><em>Submitted to an international research journal</em></div>
+        <p style="font-size:.9rem">Undergraduate thesis implementing ALO in Python — protein conformations modeled as a combinatorial search problem, with a from-scratch fitness pipeline and NumPy vectorization plus multiprocessing for large search spaces.</p>
+      </div>
+      <div class="edu-block">
+        <h3>Flutter Development Internship (2025)</h3>
+        <p style="font-size:.9rem">Flutter, state management, Firebase, API integration, mobile app development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EP 8 -->
+  <section id="contact" class="center" data-title="Contact">
+    <div class="panel">
+      <p class="eyebrow reveal">Episode 08 · Finale</p>
+      <h2 class="reveal d1" style="font-size:clamp(2rem,5vw,3.4rem)">Let's build something<br>that matters.</h2>
+      <p class="reveal d2">Open to conversations about Flutter, full-stack development, and AI-driven products.</p>
+      <div class="contact-links reveal d3">
+        <a class="btn primary" href="mailto:musfiq677@gmail.com">✉ Email</a>
+        <a class="btn" href="https://github.com/musfiq180214" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/mrs180214/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://codeforces.com/profile/musfiqrahman" target="_blank" rel="noopener">Codeforces</a>
+        <a class="btn" href="https://leetcode.com/u/musfiq180214/" target="_blank" rel="noopener">LeetCode</a>
+      </div>
+      <p class="quote reveal d4">“Building technology that creates real-world impact.”</p>
+    </div>
+  </section>
+</main>
+<footer>© <span id="yr"></span> Musfiq Rahman · Dhaka, Bangladesh</footer>
+
+<script type="module">
+import * as THREE from 'three';
+
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+$('#yr').textContent = new Date().getFullYear();
+
+/* ---------- Typed roles ---------- */
+const roles = ['Flutter Developer', 'AI Enthusiast', 'Competitive Programmer', 'Clean Architecture Fan'];
+const typedEl = $('#typed');
+if (reduceMotion) typedEl.textContent = roles[0];
+else {
+  let ri = 0, ci = 0, del = false;
+  (function tick() {
+    const word = roles[ri];
+    typedEl.textContent = word.slice(0, ci);
+    if (!del && ci === word.length) { del = true; return setTimeout(tick, 1400); }
+    if (del && ci === 0) { del = false; ri = (ri + 1) % roles.length; }
+    ci += del ? -1 : 1;
+    setTimeout(tick, del ? 35 : 75);
+  })();
+}
+
+/* ---------- Reveal + counters ---------- */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('in');
+    $$('[data-count]', e.target).forEach(countUp);
+    io.unobserve(e.target);
+  });
+}, { threshold: .12 });
+$$('.reveal').forEach(el => io.observe(el));
+
+function countUp(el) {
+  if (el.dataset.done) return; el.dataset.done = 1;
+  const end = +el.dataset.count; const t0 = performance.now();
+  (function step(t) {
+    const p = Math.min((t - t0) / 1200, 1);
+    el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+    if (p < 1) requestAnimationFrame(step);
+  })(t0);
+}
+
+/* ---------- 3D tilt cards ---------- */
+$$('[data-tilt]').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    card.style.transform = `perspective(800px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) translateZ(6px)`;
+  });
+  card.addEventListener('mouseleave', () => card.style.transform = '');
+});
+
+/* ---------- Video theater ----------
+   For each video you can set ONE of:
+     mp4:   'videos/my-demo.mp4'  -> plays natively in the frame (most reliable)
+     embed: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:XXXX'
+            (LinkedIn post -> ••• -> "Embed this post" -> copy the src URL)
+   If neither is set, Play opens the LinkedIn post in a new tab. */
+const VIDEOS = [
+  { title: 'Student Results System', tag: 'Full-stack', url: 'https://lnkd.in/p/gHpWg8Zh', mp4: '', embed: '',
+    caption: 'Shipped in 2 days: Flutter + Spring Boot + PostgreSQL + Docker, live on Render. Requirements, roles, ER diagram and endpoints first — then code.',
+    stack: 'Flutter · Spring Boot · PostgreSQL · Docker · Render' },
+  { title: 'LifePulse', tag: 'AI · Health', url: 'https://lnkd.in/p/gQidbKNy', mp4: '', embed: '',
+    caption: 'A personal health & nutrition OS. Snap a meal, get instant macros and coaching from multimodal AI, with an offline-first cache.',
+    stack: 'Flutter · Gemini · Riverpod · Supabase · Hive' },
+  { title: 'VoyageAI', tag: 'AI · Travel', url: 'https://www.linkedin.com/posts/mrs180214_flutter-generativeai-traveltech-activity-7485236949184577536-tWa3', mp4: '',
+    embed: 'https://www.linkedin.com/embed/feed/update/urn:li:activity:7485236949184577536',
+    caption: 'AI-powered trip planning with interactive maps, Firebase Auth and Clean Architecture.',
+    stack: 'Flutter · Riverpod · Firebase · Maps' },
+  { title: 'BDRail', tag: 'AI · Transport', url: 'https://lnkd.in/p/eyjCPwZ8', mp4: '', embed: '',
+    caption: 'Gemini conversational booking, live seat management, SSLCommerz payments and PDF e-tickets.',
+    stack: 'Flutter · Gemini · Riverpod · Hive' },
+  { title: 'QuickLearn', tag: 'Learning', url: 'https://lnkd.in/p/gBVKqCrk', mp4: '', embed: '',
+    caption: 'SSLCommerz checkout across cards and mobile wallets, AdMob, and offline order caching.',
+    stack: 'Flutter · Riverpod · Hive · AdMob' },
+  { title: 'Dummy JSON App', tag: 'Android', url: 'https://lnkd.in/p/g53Nd6Xg', mp4: '', embed: '',
+    caption: 'Enterprise-grade Jetpack Compose app: offline-first, type-safe navigation, Material 3.',
+    stack: 'Compose · Room · DataStore · StateFlow' }
+];
+const stage = $('#stage'), playlist = $('#playlist');
+const playIcon = '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="currentColor"/></svg>';
+function showPoster(i) {
+  const v = VIDEOS[i];
+  stage.innerHTML = `<div class="poster">
+    <div class="orb o1"></div><div class="orb o2"></div>
+    <button class="play" aria-label="Play ${v.title}">${playIcon}</button>
+    <div class="poster-info"><span class="tag">${v.tag}</span><h3>${v.title}</h3><p>${v.caption}</p><span class="stackline">${v.stack}</span></div>
+  </div>`;
+  $('.play', stage).onclick = () => playVideo(i);
+}
+function playVideo(i) {
+  const v = VIDEOS[i];
+  if (v.mp4) stage.innerHTML = `<video src="${v.mp4}" controls autoplay playsinline></video>`;
+  else if (v.embed) stage.innerHTML = `<iframe src="${v.embed}" title="${v.title}" allowfullscreen loading="lazy" allow="fullscreen; picture-in-picture"></iframe>`;
+  else window.open(v.url, '_blank', 'noopener');
+}
+function selectVideo(i) {
+  const v = VIDEOS[i];
+  $('#frameTitle').textContent = v.title;
+  $('#openLink').href = v.url;
+  $$('button', playlist).forEach((b, k) => b.classList.toggle('active', k === i));
+  showPoster(i);
+}
+VIDEOS.forEach((v, i) => {
+  const b = document.createElement('button');
+  b.setAttribute('role', 'listitem');
+  b.innerHTML = `<span class="n">${String(i + 1).padStart(2, '0')}</span><span class="t"><b>${v.title}</b><small>${v.tag}</small></span><span class="p">${playIcon}</span>`;
+  b.onclick = () => selectVideo(i);
+  playlist.appendChild(b);
+});
+selectVideo(0);
+
+/* ---------- Episode nav ---------- */
+const sections = $$('main section');
+const dotsEl = $('#dots');
+sections.forEach((s, i) => {
+  const b = document.createElement('button');
+  b.dataset.title = s.dataset.title; b.setAttribute('aria-label', s.dataset.title);
+  b.onclick = () => s.scrollIntoView({ behavior: 'smooth' });
+  dotsEl.appendChild(b);
+});
+const dotBtns = $$('button', dotsEl);
+
+/* ---------- Cursor glow ---------- */
+const glow = $('#glow'); let mx = innerWidth / 2, my = innerHeight / 2;
+addEventListener('pointermove', e => {
+  mx = e.clientX; my = e.clientY;
+  glow.style.left = mx + 'px'; glow.style.top = my + 'px';
+});
+
+/* ---------- Three.js scene ---------- */
+const canvas = $('#bg');
+let renderer;
+try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true }); }
+catch (err) { console.warn('WebGL unavailable', err); }
+
+let scrollPos = 0; // fractional section index
+let centers = [];
+function measure() { centers = sections.map(s => s.offsetTop + s.offsetHeight / 2); }
+addEventListener('load', measure); addEventListener('resize', measure); measure();
+
+function updateScroll() {
+  const y = scrollY + innerHeight / 2;
+  let i = 0;
+  while (i < centers.length - 1 && y > centers[i + 1]) i++;
+  const last = centers.length - 1;
+  if (i >= last) scrollPos = last;
+  else if (y < centers[0]) scrollPos = 0;
+  else scrollPos = i + (y - centers[i]) / (centers[i + 1] - centers[i]);
+  const max = document.documentElement.scrollHeight - innerHeight;
+  $('#progress').style.width = (max > 0 ? scrollY / max * 100 : 0) + '%';
+  const idx = Math.round(scrollPos);
+  dotBtns.forEach((b, k) => b.classList.toggle('active', k === idx));
+  $('#epLabel').textContent = `Episode ${String(idx + 1).padStart(2, '0')} — ${sections[idx].dataset.title}`;
+}
+addEventListener('scroll', updateScroll, { passive: true }); updateScroll();
+
+if (renderer) {
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2(0x070b1a, 0.045);
+  const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 100);
+  camera.position.set(0, 0, 8);
+
+  const palette = ['#7cf0d4', '#8f9bff', '#ff9ad5', '#7cf0d4', '#8f9bff', '#6fd8ff', '#ff9ad5', '#7cf0d4'].map(c => new THREE.Color(c));
+  const tint = new THREE.Color(palette[0]);
+
+  // Hero object: wireframe knot + glowing core + rings
+  const hero = new THREE.Group(); scene.add(hero);
+  const knotMat = new THREE.MeshBasicMaterial({ color: tint, wireframe: true, transparent: true, opacity: .55 });
+  const knot = new THREE.Mesh(new THREE.TorusKnotGeometry(1.3, .38, 180, 24, 2, 3), knotMat);
+  hero.add(knot);
+  const coreMat = new THREE.MeshBasicMaterial({ color: tint, wireframe: true, transparent: true, opacity: .25 });
+  const core = new THREE.Mesh(new THREE.IcosahedronGeometry(.75, 1), coreMat);
+  hero.add(core);
+  const ringMat = new THREE.MeshBasicMaterial({ color: tint, transparent: true, opacity: .35 });
+  const rings = [0, 1].map(i => {
+    const r = new THREE.Mesh(new THREE.TorusGeometry(2.3 + i * .5, .012, 8, 160), ringMat);
+    r.rotation.x = Math.PI / 2.4 + i * .7; hero.add(r); return r;
+  });
+  // orbiting small spheres
+  const orbiters = [];
+  for (let i = 0; i < 5; i++) {
+    const m = new THREE.Mesh(new THREE.SphereGeometry(.07, 16, 16), new THREE.MeshBasicMaterial({ color: palette[i % 3] }));
+    hero.add(m); orbiters.push({ m, r: 2.3 + (i % 2) * .5, s: .4 + i * .13, o: i * 1.3 });
+  }
+
+  // Particle field
+  const N = 2200, pos = new Float32Array(N * 3), col = new Float32Array(N * 3);
+  for (let i = 0; i < N; i++) {
+    pos[i * 3] = (Math.random() - .5) * 40;
+    pos[i * 3 + 1] = (Math.random() - .5) * 60;
+    pos[i * 3 + 2] = (Math.random() - .5) * 30 - 4;
+    const c = palette[Math.floor(Math.random() * 3)];
+    col[i * 3] = c.r; col[i * 3 + 1] = c.g; col[i * 3 + 2] = c.b;
+  }
+  const pg = new THREE.BufferGeometry();
+  pg.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  pg.setAttribute('color', new THREE.BufferAttribute(col, 3));
+  const stars = new THREE.Points(pg, new THREE.PointsMaterial({ size: .045, vertexColors: true, transparent: true, opacity: .75, depthWrite: false }));
+  scene.add(stars);
+
+  // Keyframes per episode (x alternates to sit opposite the text panel)
+  const kf = [
+    { x: 2.6, y: 0, z: 0, s: 1.05 }, { x: -2.8, y: .1, z: -.5, s: .95 },
+    { x: 2.8, y: -.1, z: 0, s: 1 }, { x: -2.8, y: .1, z: -.3, s: .95 },
+    { x: 2.8, y: 0, z: -.2, s: 1 }, { x: 0, y: 0, z: -4.5, s: .9 },
+    { x: -2.8, y: 0, z: 0, s: 1 }, { x: 0, y: .2, z: 1.2, s: 1.35 }
+  ];
+  const ease = t => t * t * (3 - 2 * t);
+  const cur = { x: 2.6, y: 0, z: 0, s: 1 };
+  const clock = new THREE.Clock();
+  let mobile = innerWidth < 900;
+
+  function resize() {
+    renderer.setSize(innerWidth, innerHeight, false);
+    camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+    mobile = innerWidth < 900;
+  }
+  addEventListener('resize', resize); resize();
+
+  function frame() {
+    const dt = Math.min(clock.getDelta(), .05), t = clock.elapsedTime;
+    const i = Math.min(Math.floor(scrollPos), kf.length - 2), f = ease(scrollPos - i);
+    const a = kf[i], b = kf[Math.min(i + 1, kf.length - 1)];
+    const target = {
+      x: mobile ? 0 : a.x + (b.x - a.x) * f,
+      y: (mobile ? 1.6 : 0) + a.y + (b.y - a.y) * f,
+      z: (mobile ? -3 : 0) + a.z + (b.z - a.z) * f,
+      s: (a.s + (b.s - a.s) * f) * (mobile ? .75 : 1)
+    };
+    const k = 1 - Math.pow(.001, dt); // frame-rate independent smoothing
+    for (const key of ['x', 'y', 'z', 's']) cur[key] += (target[key] - cur[key]) * k;
+    hero.position.set(cur.x, cur.y + Math.sin(t * .8) * .12, cur.z);
+    hero.scale.setScalar(cur.s);
+
+    const spin = reduceMotion ? 0 : 1;
+    knot.rotation.x = t * .18 * spin + scrollPos * .6;
+    knot.rotation.y = t * .26 * spin + scrollPos * .9;
+    core.rotation.y = -t * .4 * spin; core.rotation.x = t * .3 * spin;
+    rings[0].rotation.z = t * .2 * spin; rings[1].rotation.z = -t * .15 * spin;
+    orbiters.forEach(o => {
+      const ang = t * o.s * spin + o.o;
+      o.m.position.set(Math.cos(ang) * o.r, Math.sin(ang * 1.3) * .9, Math.sin(ang) * o.r);
+    });
+
+    // colour drift between episodes
+    const ci = Math.min(Math.floor(scrollPos), palette.length - 2);
+    tint.copy(palette[ci]).lerp(palette[ci + 1], scrollPos - ci);
+    knotMat.color.copy(tint); coreMat.color.copy(tint); ringMat.color.copy(tint);
+
+    // camera journey: drifts down the star field + mouse parallax
+    const px = (mx / innerWidth - .5), py = (my / innerHeight - .5);
+    camera.position.x += (px * .8 - camera.position.x) * .04;
+    camera.position.y += (-py * .5 - scrollPos * .9 - camera.position.y) * .04;
+    camera.lookAt(camera.position.x * .3, camera.position.y - .0, 0);
+    stars.rotation.y = t * .01 * spin + scrollPos * .08;
+    stars.position.y = scrollPos * 1.8;
+
+    renderer.render(scene, camera);
+    requestAnimationFrame(frame);
+  }
+  frame();
+} else {
+  canvas.style.display = 'none';
+}
+</script>
+</body>
+</html>
